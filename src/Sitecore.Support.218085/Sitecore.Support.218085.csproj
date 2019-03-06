@@ -47,27 +47,27 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Sitecore.Analytics">
-      <HintPath>..\packages\SC.Sitecore.Analytics.8.2.7\lib\Sitecore.Analytics.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.Analytics.8.2.2\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.EmailCampaign.Model">
-      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.Model.3.5.2\lib\Sitecore.EmailCampaign.Model.dll</HintPath>
+      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.Model.3.4.1\lib\Sitecore.EmailCampaign.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ExM.Framework">
-      <HintPath>..\packages\EXM.Sitecore.ExM.Framework.3.5.2\lib\Sitecore.ExM.Framework.dll</HintPath>
+      <HintPath>..\packages\EXM.Sitecore.ExM.Framework.3.4.1\lib\Sitecore.ExM.Framework.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ExM.Framework.Web">
-      <HintPath>..\packages\EXM.Sitecore.ExM.Framework.Web.3.5.2\lib\Sitecore.ExM.Framework.Web.dll</HintPath>
+      <HintPath>..\packages\EXM.Sitecore.ExM.Framework.Web.3.4.1\lib\Sitecore.ExM.Framework.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">
-      <HintPath>..\packages\SC.Sitecore.Kernel.8.2.7\lib\Sitecore.Kernel.dll</HintPath>
+      <HintPath>..\packages\SC.Sitecore.Kernel.8.2.2\lib\Sitecore.Kernel.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.EmailCampaign">
-      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.3.5.2\lib\Sitecore.EmailCampaign.dll</HintPath>
+      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.3.4.1\lib\Sitecore.EmailCampaign.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />
