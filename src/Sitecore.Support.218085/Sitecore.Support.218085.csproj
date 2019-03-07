@@ -50,16 +50,12 @@
       <HintPath>..\packages\SC.Sitecore.Analytics.8.2.2\lib\Sitecore.Analytics.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Sitecore.EmailCampaign.Model">
-      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.Model.3.4.1\lib\Sitecore.EmailCampaign.Model.dll</HintPath>
+    <Reference Include="Sitecore.EmailCampaign.Analytics.Model, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\EXM.Sitecore.EmailCampaign.Analytics.Model.3.4.1\lib\Sitecore.EmailCampaign.Analytics.Model.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.ExM.Framework">
       <HintPath>..\packages\EXM.Sitecore.ExM.Framework.3.4.1\lib\Sitecore.ExM.Framework.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="Sitecore.ExM.Framework.Web">
-      <HintPath>..\packages\EXM.Sitecore.ExM.Framework.Web.3.4.1\lib\Sitecore.ExM.Framework.Web.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Sitecore.Kernel">

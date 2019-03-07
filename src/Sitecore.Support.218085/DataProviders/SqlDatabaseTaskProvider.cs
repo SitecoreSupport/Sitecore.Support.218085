@@ -32,7 +32,7 @@ namespace Sitecore.Support.ExM.Framework.DataProviders
     /// <summary>
     /// The number of attempts to execute a request if it fails due to a deadlock.
     /// </summary>
-    private int _numDeadlockAttempts = 3;
+    private int numDeadlockAttempts;
 
     /// <summary>
     /// Number of milliseconds for command timeout
@@ -47,7 +47,7 @@ namespace Sitecore.Support.ExM.Framework.DataProviders
     /// <exception cref="Sitecore.Exceptions.ConfigurationException">
     /// Thrown if the specified connection string could not be found.
     /// </exception>
-    public SqlDatabaseTaskProvider([NotNull] string connectionStringName, [NotNull] string tableName, string commandTimeout)
+    public SqlDatabaseTaskProvider([NotNull] string connectionStringName, [NotNull] string tableName, string commandTimeout, string numDeadlockAttempts)
     {
       Assert.ArgumentNotNull(connectionStringName, "connectionStringName");
       Assert.ArgumentNotNullOrEmpty(tableName, "tableName");
@@ -64,6 +64,8 @@ namespace Sitecore.Support.ExM.Framework.DataProviders
 
       // The timeout value from the configuration (the "commandTimeout" param)
       this.commandTimeout = int.Parse(commandTimeout);
+      // The number of retries from the configuration (the "numDeadlockAttempts" param)
+      this.numDeadlockAttempts = int.Parse(numDeadlockAttempts);
     }
 
     /// <summary>
@@ -72,12 +74,12 @@ namespace Sitecore.Support.ExM.Framework.DataProviders
     [UsedImplicitly]
     public int NumDeadlockAttempts
     {
-      get { return _numDeadlockAttempts; }
+      get { return numDeadlockAttempts; }
 
       set
       {
         Assert.ArgumentCondition(value > 0, "value", "The number of attempts to execute request that fails due to a deadlock must be positive.");
-        _numDeadlockAttempts = value;
+        numDeadlockAttempts = value;
       }
     }
 
